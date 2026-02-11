@@ -12,9 +12,14 @@
     :root { --green: #4ade80; --bg: #0a0a0a; --text: #e5e5e5; --muted: #a3a3a3; }
     html { scroll-behavior: smooth; }
     body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
-    @keyframes line-flow { 0% { -webkit-mask-position: -200% -200%; mask-position: -200% -200%; } 100% { -webkit-mask-position: 200% 200%; mask-position: 200% 200%; } }
+    @keyframes glow-drift-1 { 0% { top:-30%;left:-30%; } 25% { top:20%;left:70%; } 50% { top:60%;left:40%; } 75% { top:30%;left:-10%; } 100% { top:-30%;left:-30%; } }
+    @keyframes glow-drift-2 { 0% { top:80%;left:90%; } 25% { top:40%;left:20%; } 50% { top:-10%;left:50%; } 75% { top:50%;left:80%; } 100% { top:80%;left:90%; } }
+    @keyframes glow-drift-3 { 0% { top:50%;left:-20%; } 33% { top:-20%;left:60%; } 66% { top:70%;left:80%; } 100% { top:50%;left:-20%; } }
     .topo-bg { background: url('topo-pattern.jpg') center/cover fixed; position: fixed; inset: 0; z-index: -2; }
-    .topo-glow { background: url('topo-glow.jpg') center/cover fixed; position: fixed; inset: 0; z-index: -1; -webkit-mask-image: linear-gradient(135deg, transparent 25%, rgba(255,255,255,0.8) 45%, rgba(255,255,255,1) 50%, rgba(255,255,255,0.8) 55%, transparent 75%); mask-image: linear-gradient(135deg, transparent 25%, rgba(255,255,255,0.8) 45%, rgba(255,255,255,1) 50%, rgba(255,255,255,0.8) 55%, transparent 75%); -webkit-mask-size: 200% 200%; mask-size: 200% 200%; animation: line-flow 8s ease-in-out infinite; }
+    .glow-spot { position:fixed; border-radius:50%; background:url('topo-glow.jpg') center/cover fixed; -webkit-mask-image:radial-gradient(ellipse at center,rgba(255,255,255,0.6) 0%,transparent 70%); mask-image:radial-gradient(ellipse at center,rgba(255,255,255,0.6) 0%,transparent 70%); z-index:-1; pointer-events:none; }
+    .glow-spot-1 { width:60vmax;height:60vmax; animation:glow-drift-1 25s ease-in-out infinite; }
+    .glow-spot-2 { width:50vmax;height:50vmax; animation:glow-drift-2 30s ease-in-out infinite; }
+    .glow-spot-3 { width:45vmax;height:45vmax; animation:glow-drift-3 35s ease-in-out infinite; }
     
     /* Typography */
     h1 { font-size: clamp(2.5rem, 8vw, 4.5rem); font-weight: 700; line-height: 1.1; letter-spacing: -0.02em; }
@@ -76,7 +81,9 @@
 </head>
 <body>
   <div class="topo-bg"></div>
-  <div class="topo-glow"></div>
+  <div class="glow-spot glow-spot-1"></div>
+  <div class="glow-spot glow-spot-2"></div>
+  <div class="glow-spot glow-spot-3"></div>
   
   <section class="hero">
     <div class="fade-up">
