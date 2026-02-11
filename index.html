@@ -12,8 +12,9 @@
     :root { --green: #4ade80; --bg: #0a0a0a; --text: #e5e5e5; --muted: #a3a3a3; }
     html { scroll-behavior: smooth; }
     body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
-    @keyframes topo-drift { 0% { background-position: 0% 0%; } 100% { background-position: 100% 100%; } }
-    .topo-bg { position: fixed; top: -50%; left: -50%; width: 200%; height: 200%; background: url('topo-pattern.jpg'); background-size: 50%; background-repeat: repeat; animation: topo-drift 120s linear infinite; z-index: -1; }
+    @keyframes line-flow { 0% { -webkit-mask-position: -200% -200%; mask-position: -200% -200%; } 100% { -webkit-mask-position: 200% 200%; mask-position: 200% 200%; } }
+    .topo-bg { background: url('topo-pattern.jpg') center/cover fixed; position: fixed; inset: 0; z-index: -2; }
+    .topo-glow { background: url('topo-glow.jpg') center/cover fixed; position: fixed; inset: 0; z-index: -1; -webkit-mask-image: linear-gradient(135deg, transparent 25%, rgba(255,255,255,0.8) 45%, rgba(255,255,255,1) 50%, rgba(255,255,255,0.8) 55%, transparent 75%); mask-image: linear-gradient(135deg, transparent 25%, rgba(255,255,255,0.8) 45%, rgba(255,255,255,1) 50%, rgba(255,255,255,0.8) 55%, transparent 75%); -webkit-mask-size: 200% 200%; mask-size: 200% 200%; animation: line-flow 8s ease-in-out infinite; }
     
     /* Typography */
     h1 { font-size: clamp(2.5rem, 8vw, 4.5rem); font-weight: 700; line-height: 1.1; letter-spacing: -0.02em; }
@@ -75,6 +76,7 @@
 </head>
 <body>
   <div class="topo-bg"></div>
+  <div class="topo-glow"></div>
   
   <section class="hero">
     <div class="fade-up">
