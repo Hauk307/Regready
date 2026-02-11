@@ -2,7 +2,6 @@
 // Schema v2 - Full season segments with weapon types, restrictions, cross-area validity
 // Extracted from WGFD wy_2025_regs.pdf
 // Species: Elk, Deer, Antelope + Searchable Rules
-
 // Wyoming 2025 Elk Regulations - Parsed from wy_2025_regs.pdf
 // Generated: 2026-02-06
 // Schema: v2
@@ -10810,6 +10809,103 @@ const rulesData = [
       "sandhill crane",
       "pheasant",
       "limit"
+    ]
+  },
+  {
+    "category": "Road Killed Wildlife",
+    "title": "Road Killed Wildlife - Definition",
+    "content": "\"Road Killed Wildlife\" means any antelope, deer, elk, moose, wild bison or wild turkey killed as the result of an unintentional vehicle collision.",
+    "keywords": [
+      "road kill",
+      "roadkill",
+      "vehicle collision",
+      "road killed wildlife"
+    ]
+  },
+  {
+    "category": "Road Killed Wildlife",
+    "title": "Authorization Required to Possess Road Kill",
+    "content": "Any person who desires to possess road killed wildlife shall apply for and may receive from the Department an authorization to possess road killed wildlife from a public road or highway prior to taking possession of any road killed wildlife. Department authorization may include, but not be limited to, an electronic reporting/authorization process, a Department issued permit to possess road killed wildlife, a donation coupon or an Interstate Game Tag. A Department authorization to possess road killed wildlife shall not be valid for any wildlife found to be taken illegally. Nothing in this regulation authorizes an individual to euthanize wildlife injured due to an unintentional vehicle collision on a public road or highway.",
+    "keywords": [
+      "road kill",
+      "roadkill",
+      "authorization",
+      "permit",
+      "possess",
+      "vehicle collision"
+    ]
+  },
+  {
+    "category": "Road Killed Wildlife",
+    "title": "Road Kill Collection Rules",
+    "content": "A person must have been issued a Department authorization prior to taking possession of any road killed wildlife. A person shall: (a) Only take possession of road killed wildlife from a public road or highway from sunrise until sunset; (b) Park the collection vehicle at least two (2) feet to the right of the roadway's solid white line and outside of the travel lane, or in the case of a paved or gravel road with no white line present, at least two (2) feet off the paved or gravel road surface, so as not to impede traffic; (c) Activate the emergency flashers on the collection vehicle during the entire time the collection vehicle is parked along a roadway. Collection vehicle emergency flashers shall be clearly visible from the front and rear of the vehicle; (d) Immediately remove the entire road killed wildlife during the authorized time period, including both edible and inedible portions, from the public road or highway. Road killed wildlife shall not be field dressed within any public road or highway right-of-way; and (e) Upon request, present the road killed wildlife for inspection to a Department representative.",
+    "keywords": [
+      "road kill",
+      "roadkill",
+      "collection",
+      "sunrise",
+      "sunset",
+      "flashers",
+      "field dress",
+      "parking"
+    ]
+  },
+  {
+    "category": "Road Killed Wildlife",
+    "title": "Roads Exempt from Road Kill Collection",
+    "content": "The following public roads or highways are prohibited from where a person may collect road killed wildlife: (a) Interstate Highway 25; (b) Interstate Highway 80; (c) Interstate Highway 90; (d) Any segment of a public road or highway designated as an active construction or maintenance zone; and (e) Any segment of a public road or highway within the exterior boundary of lands administered by the National Park Service.",
+    "keywords": [
+      "road kill",
+      "roadkill",
+      "interstate",
+      "I-25",
+      "I-80",
+      "I-90",
+      "exempt",
+      "prohibited",
+      "national park",
+      "construction zone"
+    ]
+  },
+  {
+    "category": "Road Killed Wildlife",
+    "title": "Road Kill Deer/Elk/Moose Disposal & Transport",
+    "content": "Deer, elk and moose taken under an authorization to possess road killed wildlife may be transported within Wyoming to a camp, a private residence for processing, a taxidermist, a processor, or a CWD sample collection site. The head and all portions of the spinal column shall be disposed of in any approved landfill or approved incinerator in Wyoming. After processing, only the following parts may be transported in Wyoming or to other states: edible portions with no part of the spinal column or head; cleaned hide without the head; skull or skull plate or antlers that have been cleaned of all meat and brain tissue; teeth; or finished taxidermy mounts. Whole deer, elk and moose carcasses taken under an authorization to possess road killed wildlife shall not be transported out of Wyoming.",
+    "keywords": [
+      "road kill",
+      "roadkill",
+      "disposal",
+      "transport",
+      "carcass",
+      "CWD",
+      "spinal column",
+      "head",
+      "taxidermy",
+      "processing",
+      "landfill"
+    ]
+  },
+  {
+    "category": "Road Killed Wildlife",
+    "title": "False Statement for Road Kill Authorization",
+    "content": "Any person who makes a false statement to obtain an authorization to possess road killed wildlife shall be in violation of this regulation.",
+    "keywords": [
+      "road kill",
+      "roadkill",
+      "false statement",
+      "violation"
+    ]
+  },
+  {
+    "category": "Road Killed Wildlife",
+    "title": "No Trespassing for Road Kill",
+    "content": "Nothing in this regulation shall allow a person to trespass onto private property to retrieve road killed wildlife without obtaining prior approval from the private landowner or an agent of the landowner.",
+    "keywords": [
+      "road kill",
+      "roadkill",
+      "trespass",
+      "private property",
+      "landowner"
     ]
   }
 ];

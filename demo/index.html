@@ -33,12 +33,20 @@
             z-index: 1;
         }
         
-        header { text-align: center; padding: 30px 0; }
+        header { text-align: center; padding: 20px 0; }
+        
+        .logo-img {
+            max-width: 100%;
+            width: 100%;
+            margin: 0 auto 10px;
+            display: block;
+        }
         
         h1 {
             font-size: 2.5em;
             color: #4ade80;
             text-shadow: 0 0 30px rgba(74, 222, 128, 0.5);
+            display: none;
         }
         
         .subtitle { color: #888; margin-top: 5px; }
@@ -574,8 +582,9 @@
 <body>
     <div class="container">
         <header>
-            <h1>🎯 RegReady</h1>
-            <p class="subtitle">Wyoming Hunting Regulations</p>
+            <img src="regready-logo.png" alt="RegReady" class="logo-img">
+            <h1>RegReady</h1>
+            <p class="subtitle"></p>
         </header>
         
         <div class="sun-widget" id="sun-widget">
