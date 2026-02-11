@@ -12,7 +12,8 @@
     :root { --green: #4ade80; --bg: #0a0a0a; --text: #e5e5e5; --muted: #a3a3a3; }
     html { scroll-behavior: smooth; }
     body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
-    .topo-bg { background: url('topo-pattern.jpg') center/cover fixed; position: fixed; inset: 0; opacity: 0.06; z-index: -1; }
+    @keyframes topo-drift { 0% { background-position: 0% 0%; } 100% { background-position: 100% 100%; } }
+    .topo-bg { position: fixed; top: -50%; left: -50%; width: 200%; height: 200%; background: url('topo-pattern.jpg'); background-size: 50%; background-repeat: repeat; animation: topo-drift 120s linear infinite; z-index: -1; }
     
     /* Typography */
     h1 { font-size: clamp(2.5rem, 8vw, 4.5rem); font-weight: 700; line-height: 1.1; letter-spacing: -0.02em; }
